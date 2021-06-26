@@ -4,16 +4,17 @@
   - EXTRACT: gather data from Wikipedia and Kaggle
   - TRANSFORM: clean-up and combine them 
   - LOAD: save them to SQL databases
-##### Create Extract_transform_load function to accept 3 files and return 3 dataframes 
-##### --------------------------------------------------------------------------------
+  
+##### Create Extract_transform_load function that reads in the three data files and creates three separate DataFrames. 
+##### ---------------------------------------------------------------------------------------------------------------------------------
 
 #### Step #1
 #### --------
 ###### Use ETL_function_test.ipynb to convert the following input files to python dataframes:
 
-    * Wikipedia JSON
-    * Kaggle metadata file
-    * MovieLens ratings file
+    * Wikipedia JSON to Wiki movies dataframe
+    * Kaggle metadata file to Kaggle Metadata dataframe
+    * MovieLens ratings file to Ratings dataframe
 
  Wiki movies dataframe
 
@@ -33,13 +34,13 @@ Rating dataframe
   
   -	Combine movie title in different languages into a single column
   - Clean up/rename the column titles
-
-    ![Wiki Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%232%20-%20step%20%2320%20-%20wiki-movies_df.PNG)
-
-Wiki movies:
-  -	Remove all non-movie rows
+  -	Remove all non-movie items related rows
   -	Clean-up ‘Box Office’, ‘Budget’, ‘Running Time’, and ‘Release Date’ column values using regex
 
+Wiki movies dataframe:
+    ![Wiki Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%232%20-%20step%20%2320%20-%20wiki-movies_df.PNG)
+
+Wiki movies dataframe columns :
     ![Wiki movies columns]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%232%20-%20step%20%2321%20-%20wiki-movies_df%20columns.PNG)
 
 #### Step #3:
@@ -54,10 +55,10 @@ Kaggle metadata:
 Merge Wiki and Kaggle data to Movie dataframe:
 
       * Inspect the merged data and replace redundant columns with the data from the more reliable format:
-      *	Wiki: running_time
-      *	Wiki: budget
-      *	Wiki: box_office
-      *	Rename the columns 
+      *	Replace Kaggle Running Time with Wiki running_time
+      *	Replace Kaggle budget with Wiki budget
+      *	Replace Kaggle revenue with Wiki box_office
+      *	Rename the columns to more meaningful titles
       
    ![Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2315%20-%20movies_df.PNG)      
       
@@ -68,6 +69,8 @@ Transform and merge ‘Ratings’ data to Movie Dataframe to create movies_with_
       *	Make column names meaningful
 
    ![Movies with Ratings]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2314%20-%20movies_with_ratings_df.PNG)
+   
+ Movie ratings dataframe:
 
    ![Del #3 step14]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2314%20-%20movies_with_ratings_df.PNG)
 
