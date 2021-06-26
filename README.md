@@ -91,3 +91,5 @@ Finally return the 3 dataframes to the calling function.
     * SQL query o show 26024289 rows.
 
     *	Query the tables to make sure all rows are transported correctly.
+    
+   ![Rating row count]( https://github.com/JoRanjit/Movies_ETL/blob/main/Del%20%234_ratings_count.PNG)
