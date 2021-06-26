@@ -17,15 +17,15 @@
 
  Wiki movies dataframe
 
-    ![Wiki Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%231%20-%20wikimovies.PNG)
+   ![Wiki Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%231%20-%20wikimovies.PNG)
 
 Kaggle Metadata dataframe
 
-    ![Kaggle Metadata]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%231%20Kaggle%20metadata.PNG)
+   ![Kaggle Metadata]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%231%20Kaggle%20metadata.PNG)
 
 Rating dataframe
   
-    ![Ratings DataFrame]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%231%20-%20ratings.PNG)
+   ![Ratings DataFrame]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%231%20-%20ratings.PNG)
 
 #### Step #2
 #### -----------------------------------------------------------------------------------------------------------------------------------
@@ -59,7 +59,7 @@ Merge Wiki and Kaggle data to Movie dataframe:
       *	Wiki: box_office
       *	Rename the columns 
       
-    ![Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2315%20-%20movies_df.PNG)      
+   ![Movies]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2315%20-%20movies_df.PNG)      
       
 Transform and merge ‘Ratings’ data to Movie Dataframe to create movies_with_ratings_df
 
@@ -67,9 +67,9 @@ Transform and merge ‘Ratings’ data to Movie Dataframe to create movies_with_
       *	Add the ratings for the same movieId 
       *	Make column names meaningful
 
-    ![Movies with Ratings]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2314%20-%20movies_with_ratings_df.PNG)
+   ![Movies with Ratings]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2314%20-%20movies_with_ratings_df.PNG)
 
-    ![Del #3 step14]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2314%20-%20movies_with_ratings_df.PNG)
+   ![Del #3 step14]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%233%20-%20step%20%2314%20-%20movies_with_ratings_df.PNG)
 
 Finally return the 3 dataframes to the calling function.
 
@@ -82,11 +82,11 @@ Finally return the 3 dataframes to the calling function.
     
     * SQL query to 6502 rows uploaded to movies table
     
-    ![movies rows](    https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%234_movies_count.PNG)
+   ![movies rows](    https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%234_movies_count.PNG)
       
      * Query to import Ratings file to movies_database in chunks
     
-    ![Rating import]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%234%20-%20ratings%20table%20import.PNG)
+   ![Rating import]( https://github.com/JoRanjit/Movies_ETL/blob/main/Images/Del%20%234%20-%20ratings%20table%20import.PNG)
     
     * SQL query o show 26024289 rows.
 
